@@ -7,6 +7,13 @@ settings:
 importers:
 
   .:
+    dependencies:
+      aws-cdk:
+        specifier: ^2.121.1
+        version: 2.121.1
+      aws-sdk:
+        specifier: ^2.1537.0
+        version: 2.1537.0
     devDependencies:
       '@tsconfig/node18':
         specifier: ^18.2.2
@@ -57,9 +64,6 @@ importers:
       aws-lambda:
         specifier: ^1.0.7
         version: 1.0.7
-      aws-sdk:
-        specifier: ^2.1537.0
-        version: 2.1537.0
       stripe:
         specifier: ^14.12.0
         version: 14.12.0
@@ -76,6 +80,12 @@ importers:
       '@types/uuid':
         specifier: ^9.0.7
         version: 9.0.7
+      aws-cdk:
+        specifier: ^2.121.1
+        version: 2.121.1
+      aws-sdk:
+        specifier: ^2.1537.0
+        version: 2.1537.0
       sst:
         specifier: ^2.39.6
         version: 2.39.6
@@ -113,7 +123,7 @@ packages:
     resolution: {integrity: sha512-DDt4SLdLOwWCjGtltH4VCST7hpOI5DzieuhGZsBpZ+AgJdSI2GCjklCXm0GCTwJG/SolkL5dtQXyUKgg9luBDg==}
     dev: true
 
-  /@aws-cdk/aws-apigatewayv2-alpha@2.110.1-alpha.0(aws-cdk-lib@2.121.1)(constructs@10.3.0):
+  /@aws-cdk/aws-apigatewayv2-alpha@2.110.1-alpha.0(aws-cdk-lib@2.110.1)(constructs@10.3.0):
     resolution: {integrity: sha512-ldOrRsu5O0KtqMiKh43QbjHX26Q2dmDAFEBsQ4Y8pLWf0cISBkFrrcsv4VF23j9r9NEgLhPzoVOqiCyf4UUliQ==}
     engines: {node: '>= 14.15.0'}
     deprecated: This package has been stabilized and moved to aws-cdk-lib
@@ -121,7 +131,7 @@ packages:
       aws-cdk-lib: ^2.110.1
       constructs: ^10.0.0
     dependencies:
-      aws-cdk-lib: 2.121.1(constructs@10.3.0)
+      aws-cdk-lib: 2.110.1(constructs@10.3.0)
       constructs: 10.3.0
     dev: true
 
@@ -134,7 +144,7 @@ packages:
       aws-cdk-lib: ^2.110.1
       constructs: ^10.0.0
     dependencies:
-      '@aws-cdk/aws-apigatewayv2-alpha': 2.110.1-alpha.0(aws-cdk-lib@2.121.1)(constructs@10.3.0)
+      '@aws-cdk/aws-apigatewayv2-alpha': 2.110.1-alpha.0(aws-cdk-lib@2.110.1)(constructs@10.3.0)
       aws-cdk-lib: 2.110.1(constructs@10.3.0)
       constructs: 10.3.0
     dev: true
@@ -148,7 +158,7 @@ packages:
       aws-cdk-lib: ^2.110.1
       constructs: ^10.0.0
     dependencies:
-      '@aws-cdk/aws-apigatewayv2-alpha': 2.110.1-alpha.0(aws-cdk-lib@2.121.1)(constructs@10.3.0)
+      '@aws-cdk/aws-apigatewayv2-alpha': 2.110.1-alpha.0(aws-cdk-lib@2.110.1)(constructs@10.3.0)
       aws-cdk-lib: 2.110.1(constructs@10.3.0)
       constructs: 10.3.0
     dev: true
@@ -3339,6 +3349,13 @@ packages:
       - table
       - yaml
 
+  /aws-cdk@2.121.1:
+    resolution: {integrity: sha512-T8UFuNGDnXNmcHagCGeQ8xQA3zU/o2ENuyGXO/ho+U3KyYs7tnWIr++ovrp2FvhiBpmBv6SuKiueBA6OW7utBw==}
+    engines: {node: '>= 14.15.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
+
   /aws-crt@1.20.1:
     resolution: {integrity: sha512-Vs2Sz5LGgCDflmaPL2VPtsqc3sGGQfevU6NSeX0egPnI7R9NeNH1j3KFEhSuhRyzfynwBHJO7jM5hYiEm+GiPw==}
     requiresBuild: true
@@ -4281,7 +4298,6 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
-    dev: true
     optional: true
 
   /fsevents@2.3.3:
@@ -5675,7 +5691,7 @@ packages:
       '@sls-next/lambda-at-edge':
         optional: true
     dependencies:
-      '@aws-cdk/aws-apigatewayv2-alpha': 2.110.1-alpha.0(aws-cdk-lib@2.121.1)(constructs@10.3.0)
+      '@aws-cdk/aws-apigatewayv2-alpha': 2.110.1-alpha.0(aws-cdk-lib@2.110.1)(constructs@10.3.0)
       '@aws-cdk/aws-apigatewayv2-authorizers-alpha': 2.110.1-alpha.0(@aws-cdk/aws-apigatewayv2-alpha@2.110.1-alpha.0)(aws-cdk-lib@2.110.1)(constructs@10.3.0)
       '@aws-cdk/aws-apigatewayv2-integrations-alpha': 2.110.1-alpha.0(@aws-cdk/aws-apigatewayv2-alpha@2.110.1-alpha.0)(aws-cdk-lib@2.110.1)(constructs@10.3.0)
       '@aws-cdk/cloud-assembly-schema': 2.110.1

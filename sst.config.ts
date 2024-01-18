@@ -9,6 +9,7 @@ export default {
     return {
       name: "notes",
       region: "us-east-1",
+      stage: "dev",
     };
   },
   stacks(app) {
